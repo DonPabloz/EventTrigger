@@ -1,0 +1,18 @@
+{
+  "bindings": [
+    {
+      "type": "eventGridTrigger",
+      "name": "eventGridEvent",
+      "direction": "in"
+    },
+    {
+      "name": "outputDocument",
+      "direction": "out",
+      "type": "cosmosDB",
+      "databaseName": "my-database2",
+      "collectionName": "my-container",
+      "createIfNotExists": true,
+      "connectionStringSetting": "cosmos-nameasdfdtrf_DOCUMENTDB"
+    }
+  ]
+}
